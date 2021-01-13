@@ -1,0 +1,11 @@
+server:
+  port: 80
+spring:
+  application:
+    name: consumer-80
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.140.1:8848  #注册中心地址
+        namespace: 0450a26b-6dad-4929-a130-a942f4b8ccb8  #测试环境
+        cluster-name: DEFAULT  #默认集群可不填写

@@ -1,0 +1,16 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: provider-8001
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.140.1:8848  #注册中心地址
+        namespace: 0450a26b-6dad-4929-a130-a942f4b8ccb8  #测试环境
+        cluster-name: DEFAULT  #默认集群可不填写
+      config:
+        server-addr: 192.168.140.1:8848 #配置中心地址
+        file-extension: yaml  #dataid名称就时application的name加file-extension
+        namespace: 0450a26b-6dad-4929-a130-a942f4b8ccb8  #测试环境
+        group: TEST_GROUP #测试组
